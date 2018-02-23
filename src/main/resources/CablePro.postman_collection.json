@@ -1,0 +1,98 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Zantech",
+		"_postman_id": "333a193a-1203-294c-b7b1-1af99889ca90",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"description": "",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"url": "{{host}}:{{port}}/login",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic emFuZHJld2l0dGU6cGFzc3dvcmQ=",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"zandrewitte\",\n\t\"password\": \"password\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"description": "",
+			"item": [
+				{
+					"name": "Get Users",
+					"request": {
+						"url": "{{host}}:{{port}}/users",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNqqVirKz0lVsjLSUUqtKFCyMjQ1MDI1MTQytNBRKi1OLcpLzAXKKlUl5qUUpZZnlpSkKtUCAAAA__8.FBTTJhbxHPMSTkhVoukCFwAdu4fsZFrxmSuRaQlJcCTIJui_z31TdWR6_20rvSgA5NKZK2mnLmvfuIMeDelhvg",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"zandrewitte\",\n\t\"password\": \"password\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get Users by ID",
+					"request": {
+						"url": "{{host}}:{{port}}/users/1",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNqqVirKz0lVsjLSUUqtKFCyMjQ1MDI1MTQytNBRKi1OLcpLzAXKKlUl5qUUpZZnlpSkKtUCAAAA__8.FBTTJhbxHPMSTkhVoukCFwAdu4fsZFrxmSuRaQlJcCTIJui_z31TdWR6_20rvSgA5NKZK2mnLmvfuIMeDelhvg",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"zandrewitte\",\n\t\"password\": \"password\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
