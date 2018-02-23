@@ -1,2 +1,2 @@
-# irontree-api
-IronTree REST API for BO and third parties
+# zantech-api
+Zantech REST API using java 8, akka-http, actors
